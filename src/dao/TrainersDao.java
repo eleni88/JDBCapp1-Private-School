@@ -93,7 +93,7 @@ public class TrainersDao {
          System.out.println("Enter Trainer's firstname:");
         String tfirstname = input.next();
         System.out.println("Enter Trainer's lastname:");
-        String tlastname = input.nextLine();
+        String tlastname = input.next();
         boolean inserted = false;
         try {
             PreparedStatement pst = getConnection().prepareStatement(insertTrainers);
